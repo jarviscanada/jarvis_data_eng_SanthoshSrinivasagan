@@ -12,7 +12,7 @@ fi
 
 #Save machine statistics in MB and current machine hostname to variables
 vmstat_mb=$(vmstat -t --unit M | tail -n1)
-
+hostname=$(hostname -f)
 
 #Retrieve hardware specification variables
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| xargs)
@@ -22,15 +22,11 @@ disk_io=$(vmstat -d | awk '{print $10}' | tail -n1 | xargs)
 disk_available=$(df -BM / | awk '{print $4}' | tail -n1 | xargs)
 timestamp=$(echo "$vmstat_mb" | awk '{print $18" "$19}' | xargs)
 
-#Subquery to find matching id in host_info table
-host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
+#Update database with hardware usage information
+host_id="(SELECT id FROM host_info WHERE hostname='$hostname')"
+insert_stmt="INSERT INTO host_usage(timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
+             VALUES('$timestamp', $host_id, $memory_free, $cpu_idle, $cpu_kernel, $disk_io, ${disk_available%M})"
 
-#PSQL command: Inserts server usage data into host_usage table
-#Note: be careful with double and single quotes
-insert_stmt="INSERT INTO host_usage(timestamp, ...) VALUES('$timestamp', ..."
-
-#set up env var for pql cmd
 export PGPASSWORD=$psql_password
-#Insert date into a database
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 exit $?
