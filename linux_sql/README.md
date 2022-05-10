@@ -55,7 +55,7 @@ Database `host_agent` will contain the following two tables:
 |cpu_model| The model of the CPU, it can be obtained by `lscpu`|
 |cpu_mhz| The operating frequency of the CPU, it can be obtained by `lscpu`|
 |l2_cache| It will provide information on the process and the memory performance gap, it can be obtained by `lscpu`|
-|totalmem| It will provide information regarding the total memory of the system, it can be obtained by `lscpu`|
+|total_mem| It will provide information regarding the total memory of the system, it can be obtained by `lscpu`|
 |timestamp| It will provide the date and time the data was captured|
 
 `host_usage`:
@@ -78,21 +78,19 @@ Database `host_agent` will contain the following two tables:
 Follow these steps to understand how to use the product. 
 
 1. Create PSQL docker container 
->    ./linux_sql/scripts/psql_docker.sh create_centos_centos1234
-
+>    ./linux_sql/scripts/psql_docker.sh start|stop|create <db_username> <db_password>
+>    
 2.  Set up the database and `host_info` and `host_usage` tables 
->   psql -h psql_host -U psql_user -W -d psql_database -f linux_sql/sql/ddl.sql
+>   psql -h <psql_host> -U <psql_user> -W -d <psql_database> -f linux_sql/sql/ddl.sql
 
 3. `host_info` will only be required to run once, it will collect all the computer's hardware data. Note mypassword = password.
->   host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
+>  bash scripts/host_info.sh <psql_host> <psql_port> <db_name> <psql_user> <psql_password>
 
 4. To obtain instantaneous value for `host_usage` of current node, enter the following: Note mypassword = password.
->  host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
+>  bash scripts/host_usage.sh <psql_host> <psql_port> <db_name> <psql_user> <psql_password>
 
-5. To automate `host_usage`, enter the following in crontab:
->   export PGPASSWORD='password' 
-
->  ./linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" 
+5. To automate `host_usage`, create a crontab and enter following:
+>  \* * * * * bash <script path>/host_usage.sh <psql_host> <psql_port> <db_name> <psql_user> <psql_password> > /tmp/host_usage.log
 
 ## Improvements
 - With the `host_info.sh` script running only once, if the user updates their computer by 
