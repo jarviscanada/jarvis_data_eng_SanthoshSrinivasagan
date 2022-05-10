@@ -42,9 +42,9 @@ Database `host_agent` will contain the following two tables:
 
 `host_info`:
 
-| id | hostname | cpu_number | cpu_architecture | cpu_model | cpu_mhz | l2_cache | totalmem | timestamp |
+| id | hostname | cpu_number | cpu_architecture | cpu_model | cpu_mhz | l2_cache | total_mem | timestamp |
 | ----- | ----- | ----- | ----- | ----- |----- | ----- | ----- | ----- |
-| `Serial`| VARCHAR Unique | INT | VARCHAR | INT | REAL | INT | INT | YYYY-M-D H:M:S |
+| `Serial`| VARCHAR Unique | INT | VARCHAR | VARCHAR | REAL | INT | INT | YYYY-M-D H:M:S |
 
 | | Description|
 |----| -----|
@@ -62,7 +62,7 @@ Database `host_agent` will contain the following two tables:
 
 | timestamp | host_id | memory_free | cpu_idle | cpu_kernel | disk_io | disk_available | 
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| YYYY-M-D H:M:S| `Serial` | INT | INT | INT | INT | INT | 
+| YYYY-M-D H:M:S| `Serial` | REAL | INT | INT | INT | REAL | 
 
 | | Description|
 |----| -----|
@@ -95,9 +95,9 @@ Follow these steps to understand how to use the product.
 >  ./linux_sql/scripts/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" 
 
 ## Improvements
-- With the `host_info.sh` script running only one, if the user updates their computer by 
+- With the `host_info.sh` script running only once, if the user updates their computer by 
 increasing total memory capacity for example, the change would not be reflected onto the
-database. A potential solution would be to find a way run the script every month automatically.
+database. A potential solution would be to find a way to run the script every month automatically.
   
 - If there are any technical error in the parent node that hosts the database, a backup storage
 feature would be helpful so that the data would not be lost.
