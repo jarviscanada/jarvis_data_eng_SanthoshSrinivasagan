@@ -7,7 +7,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class JavaGrepImp implements JavaGrep{
+
 
   private String regex;
   private String rootPath;
@@ -27,7 +29,7 @@ public class JavaGrepImp implements JavaGrep{
   }
 
   @Override
-  public List<File> listFiles(String rootDir) {
+  public List<File> listFiles(String rootDir){
     List<File> fileList = new ArrayList<>();
     File rootPath = new File(rootDir);
     if (!rootPath.exists()) {
@@ -111,6 +113,7 @@ public class JavaGrepImp implements JavaGrep{
     if (args.length != 3) {
       throw new IllegalArgumentException("Usage: JavaGrep regex rootPath outFile");
     }
+
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);
