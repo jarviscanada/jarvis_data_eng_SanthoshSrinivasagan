@@ -8,13 +8,14 @@ import java.io.*;
 import java.lang.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.apache.log4j.BasicConfigurator;
 
 public class JavaGrepLambdaImp extends JavaGrepImp {
-
   public static void main(String[] args) {
     if (args.length != 3) {
       throw new IllegalArgumentException("Usage: JavaGrep regex rootPath outFile");
     }
+    BasicConfigurator.configure();
 
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
@@ -23,7 +24,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     try {
       javaGrepImp.process();
     } catch (Exception e) {
-      throw new RuntimeException("ERROR: ", e);
+      javaGrepImp.logger.error(e.getMessage(), e);
     }
   }
 
