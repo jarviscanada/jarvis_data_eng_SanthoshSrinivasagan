@@ -23,7 +23,7 @@ We then stored it in our PostgreSQL warehouse and analyzed it using Jupyter.
 
 ## Data Analytics and Wrangling
 
-Jupyter Notebook: [retail_data_analytics_wrangling.ipynb](retail_data_analytics_wrangling.ipynb)
+Jupyter Notebook: [retail_data_analytics_wrangling.ipynb](jupyter_notebook/retail_data_analytics_wrangling.ipynb)
 
 Using the RFM market research method, London Gift Shop decided to focus on three types of customers (segments):
  - Can't Lose Segment
