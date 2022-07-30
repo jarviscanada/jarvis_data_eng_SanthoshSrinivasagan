@@ -4,32 +4,31 @@ name: "Santhosh Srinivasagan"
 github_repo_root_url: "https://github.com/jarviscanada/jarvis_data_eng_SanthoshSrinivasagan"
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: "Working as a robotics programmer and having an electrical engineering background has prepared me to have a mindset of being open to learning any number of tools or technologies to solve a problem. At Jarvis, I developed skills in Java, Python, Git, SQL, Bash, Maven, and Docker while participating in various challenging projects using an Agile/Scrum framework. My propelling interest in debugging and solving complex problems in any of my project endeavors developed my desire to be working in an environment that challenges this aspect of my skill set by demanding innovative problem-solving abilities. After realizing how satisfying it is to solve technical problems using logical thinking, I decided to switch careers to data engineering. Over the next few years, I would go on to teach myself data structures, algorithms, and programming through various courses and projects." 
+summary: "Working as a robotics programmer and having an electrical engineering background has prepared me to have a mindset of being open to learning any number of tools or technologies to solve a problem. At Jarvis, I developed skills in Java, Python, Git, SQL, Bash, Maven, and Docker while participating in various challenging projects using an Agile/Scrum framework. Throughout my professional career, I have enjoyed debugging and solving complex problems, and I aim to work in an environment that demands an innovative approach to problem-solving. After realizing how satisfying it is to solve technical problems, I decided to switch careers to data engineering. Over the next few years, I would go on to teach myself data structures, algorithms, and programming through various courses and projects." 
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
   # At least 5 skills
   proficient:
-    - Java
     - Python
-    - Linux/Bash
     - RDBMS/SQL
+    - Java
+    - Linux/Bash
     - Agile/Scrum
-    - Maven
-    - Docker
     - Git
   # At least 5 skills
   competent:
-    - Cloud computing
+    - Data Modelling
+    - Jupyter Notebook
+    - Docker
     - .NET framework
-    - Object Oriented Programming
     - Matlab
     - Data structures and algorithms
   # At least 5 skills
   familiar:
     - Raspberry pi
-    - Google Cloud platform
+    - GCP
     - PostgresSQL
     - Swift
     - Android studio
@@ -40,7 +39,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: The Jarvis Linux Cluster Monitoring Agent manages a linux cluster of servers running linux distribution of CentOS 7. With this set of scripts, users have the ability to gather data on hardware information and usage of all servers in the cluster in one database, compare results and analyze the effective utilization of hardware resources. The Linux Cluster Administration Team at Jarvis would use this product to manage their 10 CentOS servers which are connected via a network switch. The project was designed, implemented, tested, and deployed with; *Git, Docker, Bash Scripts, CentOS 7, PostgreSQL, and Google Cloud Platform*
+    description: The Jarvis Linux Cluster Monitoring Agent manages a linux cluster of servers running CentOS 7. Developed Bash scripts that gather data on hardware information and usage of hardware on all servers in the cluster and store it to a PostgresSQL database. The database is implemented as a Docker container. This allows the user to compare results and analyze the effective utilization of hardware resources. The project was designed, implemented, tested, and deployed with; *Git, Docker, Bash Scripts, CentOS 7, PostgreSQL, and Google Cloud Platform*
   - name: "Python Data Analytics"
     git_url: "/python_data_analytics"
     description: "Developed a proof-of-concept project to help an online gift store analyze their sales data and find effective marketing strategies. For this project, we used Jupyter, a Python notebook, to perform our analyses. A PostgreSQL data warehouse was used to store client retail data. Using Pandas, NumPy, and MatPlotLib, we manipulate the dataset and display the results. By using RFM market research, we were able to segment customers so that the store could develop marketing campaigns targeting both old and new customers."
