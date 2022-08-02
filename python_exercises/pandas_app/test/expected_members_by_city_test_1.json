@@ -1,0 +1,103 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"memid",
+                "type":"integer"
+            },
+            {
+                "name":"surname",
+                "type":"string"
+            },
+            {
+                "name":"firstname",
+                "type":"string"
+            },
+            {
+                "name":"address",
+                "type":"string"
+            },
+            {
+                "name":"zipcode",
+                "type":"integer"
+            },
+            {
+                "name":"telephone",
+                "type":"string"
+            },
+            {
+                "name":"recommendedby",
+                "type":"number"
+            },
+            {
+                "name":"joindate",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":8,
+            "memid":8,
+            "surname":"Boothe",
+            "firstname":"Tim",
+            "address":"3 Bloomsbury Close, Reading, 00234",
+            "zipcode":234,
+            "telephone":"(811) 433-2547",
+            "recommendedby":3.0,
+            "joindate":"2012-07-25 16:02:35"
+        },
+        {
+            "index":11,
+            "memid":11,
+            "surname":"Jones",
+            "firstname":"David",
+            "address":"976 Gnats Close, Reading",
+            "zipcode":33862,
+            "telephone":"(844) 536-8036",
+            "recommendedby":4.0,
+            "joindate":"2012-08-06 16:32:55"
+        },
+        {
+            "index":16,
+            "memid":16,
+            "surname":"Baker",
+            "firstname":"Timothy",
+            "address":"329 James Street, Reading",
+            "zipcode":58393,
+            "telephone":"833-941-0824",
+            "recommendedby":13.0,
+            "joindate":"2012-08-15 10:34:25"
+        },
+        {
+            "index":19,
+            "memid":21,
+            "surname":"Mackenzie",
+            "firstname":"Anna",
+            "address":"64 Perkington Lane, Reading",
+            "zipcode":64577,
+            "telephone":"(822) 661-2898",
+            "recommendedby":1.0,
+            "joindate":"2012-08-26 09:32:05"
+        },
+        {
+            "index":22,
+            "memid":26,
+            "surname":"Jones",
+            "firstname":"Douglas",
+            "address":"976 Gnats Close, Reading",
+            "zipcode":11986,
+            "telephone":"844 536-8036",
+            "recommendedby":11.0,
+            "joindate":"2012-09-02 18:43:05"
+        }
+    ]
+}

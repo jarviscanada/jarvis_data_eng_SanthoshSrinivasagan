@@ -1,0 +1,55 @@
+{
+    "table_name": "test/members_test_1.csv",
+    "data": [
+        {
+            "memid": "0",
+            "surname": "GUEST",
+            "firstname": "GUEST",
+            "address": "GUEST",
+            "zipcode": "0",
+            "telephone": "(000) 000-0000",
+            "recommendedby": "",
+            "joindate": "2012-07-01 00:00:00"
+        },
+        {
+            "memid": "1",
+            "surname": "Smith",
+            "firstname": "Darren",
+            "address": "8 Bloomsbury Close, Boston",
+            "zipcode": "4321",
+            "telephone": "555-555-5555",
+            "recommendedby": "",
+            "joindate": "2012-07-02 12:02:05"
+        },
+        {
+            "memid": "2",
+            "surname": "Smith",
+            "firstname": "Tracy",
+            "address": "8 Bloomsbury Close, New York",
+            "zipcode": "4321",
+            "telephone": "555-555-5555",
+            "recommendedby": "",
+            "joindate": "2012-07-02 12:08:23"
+        },
+        {
+            "memid": "3",
+            "surname": "Rownam",
+            "firstname": "Tim",
+            "address": "23 Highway Way, Boston",
+            "zipcode": "23423",
+            "telephone": "(844) 693-0723",
+            "recommendedby": "",
+            "joindate": "2012-07-03 09:32:15"
+        },
+        {
+            "memid": "4",
+            "surname": "Joplette",
+            "firstname": "Janice",
+            "address": "20 Crossing Road, New York",
+            "zipcode": "234",
+            "telephone": "(833) 942-4710",
+            "recommendedby": "1",
+            "joindate": "2012-07-03 10:25:05"
+        }
+    ]
+}

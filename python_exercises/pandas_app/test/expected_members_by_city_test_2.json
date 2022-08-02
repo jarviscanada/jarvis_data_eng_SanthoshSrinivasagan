@@ -1,0 +1,70 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"memid",
+                "type":"integer"
+            },
+            {
+                "name":"surname",
+                "type":"string"
+            },
+            {
+                "name":"firstname",
+                "type":"string"
+            },
+            {
+                "name":"address",
+                "type":"string"
+            },
+            {
+                "name":"zipcode",
+                "type":"integer"
+            },
+            {
+                "name":"telephone",
+                "type":"string"
+            },
+            {
+                "name":"recommendedby",
+                "type":"number"
+            },
+            {
+                "name":"joindate",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":2,
+            "memid":2,
+            "surname":"Smith",
+            "firstname":"Tracy",
+            "address":"8 Bloomsbury Close, New York",
+            "zipcode":4321,
+            "telephone":"555-555-5555",
+            "recommendedby":null,
+            "joindate":"2012-07-02 12:08:23"
+        },
+        {
+            "index":4,
+            "memid":4,
+            "surname":"Joplette",
+            "firstname":"Janice",
+            "address":"20 Crossing Road, New York",
+            "zipcode":234,
+            "telephone":"(833) 942-4710",
+            "recommendedby":1.0,
+            "joindate":"2012-07-03 10:25:05"
+        }
+    ]
+}

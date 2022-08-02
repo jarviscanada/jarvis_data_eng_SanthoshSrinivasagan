@@ -1,0 +1,213 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"memid",
+                "type":"integer"
+            },
+            {
+                "name":"surname",
+                "type":"string"
+            },
+            {
+                "name":"firstname",
+                "type":"string"
+            },
+            {
+                "name":"address",
+                "type":"string"
+            },
+            {
+                "name":"zipcode",
+                "type":"integer"
+            },
+            {
+                "name":"telephone",
+                "type":"string"
+            },
+            {
+                "name":"recommendedby",
+                "type":"number"
+            },
+            {
+                "name":"joindate",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":1,
+            "memid":1,
+            "surname":"Smith",
+            "firstname":"Darren",
+            "address":"8 Bloomsbury Close, Boston",
+            "zipcode":4321,
+            "telephone":"555-555-5555",
+            "recommendedby":null,
+            "joindate":"2012-07-02 12:02:05"
+        },
+        {
+            "index":3,
+            "memid":3,
+            "surname":"Rownam",
+            "firstname":"Tim",
+            "address":"23 Highway Way, Boston",
+            "zipcode":23423,
+            "telephone":"(844) 693-0723",
+            "recommendedby":null,
+            "joindate":"2012-07-03 09:32:15"
+        },
+        {
+            "index":5,
+            "memid":5,
+            "surname":"Butters",
+            "firstname":"Gerald",
+            "address":"1065 Huntingdon Avenue, Boston",
+            "zipcode":56754,
+            "telephone":"(844) 078-4130",
+            "recommendedby":1.0,
+            "joindate":"2012-07-09 10:44:09"
+        },
+        {
+            "index":6,
+            "memid":6,
+            "surname":"Tracy",
+            "firstname":"Burton",
+            "address":"3 Tunisia Drive, Boston",
+            "zipcode":45678,
+            "telephone":"(822) 354-9973",
+            "recommendedby":null,
+            "joindate":"2012-07-15 08:52:55"
+        },
+        {
+            "index":7,
+            "memid":7,
+            "surname":"Dare",
+            "firstname":"Nancy",
+            "address":"6 Hunting Lodge Way, Boston",
+            "zipcode":10383,
+            "telephone":"(833) 776-4001",
+            "recommendedby":4.0,
+            "joindate":"2012-07-25 08:59:12"
+        },
+        {
+            "index":12,
+            "memid":12,
+            "surname":"Baker",
+            "firstname":"Anne",
+            "address":"55 Powdery Street, Boston",
+            "zipcode":80743,
+            "telephone":"844-076-5141",
+            "recommendedby":9.0,
+            "joindate":"2012-08-10 14:23:22"
+        },
+        {
+            "index":14,
+            "memid":14,
+            "surname":"Smith",
+            "firstname":"Jack",
+            "address":"252 Binkington Way, Boston",
+            "zipcode":69302,
+            "telephone":"(822) 163-3254",
+            "recommendedby":1.0,
+            "joindate":"2012-08-10 16:22:05"
+        },
+        {
+            "index":17,
+            "memid":17,
+            "surname":"Pinker",
+            "firstname":"David",
+            "address":"5 Impreza Road, Boston",
+            "zipcode":65332,
+            "telephone":"811 409-6734",
+            "recommendedby":13.0,
+            "joindate":"2012-08-16 11:32:47"
+        },
+        {
+            "index":18,
+            "memid":20,
+            "surname":"Genting",
+            "firstname":"Matthew",
+            "address":"4 Nunnington Place, Wingfield, Boston",
+            "zipcode":52365,
+            "telephone":"(811) 972-1377",
+            "recommendedby":5.0,
+            "joindate":"2012-08-19 14:55:55"
+        },
+        {
+            "index":20,
+            "memid":22,
+            "surname":"Coplin",
+            "firstname":"Joan",
+            "address":"85 Bard Street, Bloomington, Boston",
+            "zipcode":43533,
+            "telephone":"(822) 499-2232",
+            "recommendedby":16.0,
+            "joindate":"2012-08-29 08:32:41"
+        },
+        {
+            "index":21,
+            "memid":24,
+            "surname":"Sarwin",
+            "firstname":"Ramnaresh",
+            "address":"12 Bullington Lane, Boston",
+            "zipcode":65464,
+            "telephone":"(822) 413-1470",
+            "recommendedby":15.0,
+            "joindate":"2012-09-01 08:44:42"
+        },
+        {
+            "index":23,
+            "memid":27,
+            "surname":"Rumney",
+            "firstname":"Henrietta",
+            "address":"3 Burkington Plaza, Boston",
+            "zipcode":78533,
+            "telephone":"(822) 989-8876",
+            "recommendedby":20.0,
+            "joindate":"2012-09-05 08:42:35"
+        },
+        {
+            "index":26,
+            "memid":30,
+            "surname":"Purview",
+            "firstname":"Millicent",
+            "address":"641 Drudgery Close, Burnington, Boston",
+            "zipcode":34232,
+            "telephone":"(855) 941-9786",
+            "recommendedby":2.0,
+            "joindate":"2012-09-18 19:04:01"
+        },
+        {
+            "index":28,
+            "memid":35,
+            "surname":"Hunt",
+            "firstname":"John",
+            "address":"5 Bullington Lane, Boston",
+            "zipcode":54333,
+            "telephone":"(899) 720-6978",
+            "recommendedby":30.0,
+            "joindate":"2012-09-19 11:32:45"
+        },
+        {
+            "index":30,
+            "memid":37,
+            "surname":"Smith",
+            "firstname":"Darren",
+            "address":"3 Funktown, Denzington, Boston",
+            "zipcode":66796,
+            "telephone":"(822) 577-3541",
+            "recommendedby":null,
+            "joindate":"2012-09-26 18:08:45"
+        }
+    ]
+}
