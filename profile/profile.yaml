@@ -74,12 +74,11 @@ highlighted_projects:
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Junior Software Developer"
+  - title: "Junior Data Engineer"
     company: "Jarvis"
     duration: "2022-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Git/GitHub, Docker, Bash Scripts, CentOS 7, PostgreSQL, Python, Java SE 8, Apache Maven, Apache Tomcat, JDBC API, and cloud platform."
-    
+    description: "Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Python, PostgresSQL, Git/GitHub, Docker, Bash Scripts, Java, Apache Maven, and GCP."   
   - title: "Robotics programmer"
     company: "Linamar corporation"
     duration: "2021-2022"

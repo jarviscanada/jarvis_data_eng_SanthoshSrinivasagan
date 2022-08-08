@@ -61,9 +61,9 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Git/GitHub, Docker, Bash Scripts, CentOS 7, PostgreSQL, Python, Java SE 8, Apache Maven, Apache Tomcat, JDBC API, and cloud platform.",
+      "description": "Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Python, PostgresSQL, Git/GitHub, Docker, Bash Scripts, Java, Apache Maven, and GCP.",
       "duration": "2022-present",
-      "title": "Junior Software Developer"
+      "title": "Junior Data Engineer"
     },
     {
       "company": "Linamar corporation",

@@ -31,7 +31,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SanthoshSr
 
 ## Professional Experiences
 
-**Junior Software Developer, Jarvis (2022-present)**: Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Git/GitHub, Docker, Bash Scripts, CentOS 7, PostgreSQL, Python, Java SE 8, Apache Maven, Apache Tomcat, JDBC API, and cloud platform.
+**Junior Data Engineer, Jarvis (2022-present)**: Worked as a Data Engineer in an Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Python, PostgresSQL, Git/GitHub, Docker, Bash Scripts, Java, Apache Maven, and GCP.
 
 **Robotics programmer, Linamar corporation (2021-2022)**: Analyzing and troubleshooting PLC program. Proven ability to work in a team environment. Writing SQL queries for storing and extracting parts information. Programming ABB & Fanuc Robots. Programming Allen Bradly suite of PLC and HMI. Debugging and patching existing programs.
 
